@@ -1,7 +1,7 @@
 
 
 #import "FlutterKeplerHandler.h"
-#import <jdsdk/JDKeplerSDK.h>
+#import <JDSDK/JDKeplerSDK.h>
 @implementation FlutterKeplerHandler
 //初始化开普勒
 - (void)initKepler:(FlutterMethodCall *)call result:(FlutterResult)result {

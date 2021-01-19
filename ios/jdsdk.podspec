@@ -18,7 +18,10 @@ A new Flutter plugin.
   s.dependency 'Flutter'
   
   # 京东导入
-  s.vendored_frameworks = 'Framework/*.framework'
+  
+  s.preserve_paths = 'JDSDK.framework'
+  s.xcconfig = { 'OTHER_LDFLAGS' => '-framework JDSDK' }
+  s.vendored_frameworks = 'Framework/JDSDK.framework'
  # s.resource = ''
   
   s.platform = :ios, '8.0'
